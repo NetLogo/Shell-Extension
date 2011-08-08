@@ -25,7 +25,7 @@ The shell extension was written by Eric Russell.
 
 Download and unzip to the extensions folder inside your NetLogo program folder.
 
-Ffor more information about NetLogo extensions in general, see the NetLogo User Manual.
+For more information about NetLogo extensions in general, see the NetLogo User Manual.
 
 ## Building
 
