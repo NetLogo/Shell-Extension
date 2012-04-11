@@ -46,7 +46,7 @@ public class ShellExtension extends org.nlogo.api.DefaultClassManager {
     public static class GetWorkingDirectory extends DefaultReporter {
         
         public Syntax getSyntax () {
-            return Syntax.reporterSyntax(new int[] { }, Syntax.TYPE_STRING);
+            return Syntax.reporterSyntax(new int[] { }, Syntax.StringType());
         }
         
         public String getAgentClassString () {
@@ -67,7 +67,7 @@ public class ShellExtension extends org.nlogo.api.DefaultClassManager {
     public static class SetWorkingDirectory extends DefaultCommand {
         
         public Syntax getSyntax () {
-            return Syntax.commandSyntax(new int[] { Syntax.TYPE_STRING });
+            return Syntax.commandSyntax(new int[] { Syntax.StringType() });
         }
         
         public String getAgentClassString () {
@@ -107,7 +107,7 @@ public class ShellExtension extends org.nlogo.api.DefaultClassManager {
     public static class SetEnvironmentVariable extends DefaultCommand {
         
         public Syntax getSyntax () {
-            return Syntax.commandSyntax(new int[] { Syntax.TYPE_STRING, Syntax.TYPE_STRING });
+            return Syntax.commandSyntax(new int[] { Syntax.StringType(), Syntax.StringType() });
         }
         
         public String getAgentClassString () {
@@ -123,7 +123,7 @@ public class ShellExtension extends org.nlogo.api.DefaultClassManager {
     public static class GetEnvironmentVariable extends DefaultReporter {
         
         public Syntax getSyntax () {
-            return Syntax.reporterSyntax(new int[] { Syntax.TYPE_STRING }, Syntax.TYPE_STRING);
+            return Syntax.reporterSyntax(new int[] { Syntax.StringType() }, Syntax.StringType());
         }
         
         public String getAgentClassString () {
@@ -144,8 +144,8 @@ public class ShellExtension extends org.nlogo.api.DefaultClassManager {
     public static class Excec extends DefaultReporter {
         
         public Syntax getSyntax () {
-            return Syntax.reporterSyntax(new int[] { Syntax.TYPE_STRING | Syntax.TYPE_REPEATABLE },
-                                         Syntax.TYPE_STRING, 
+            return Syntax.reporterSyntax(new int[] { Syntax.StringType() | Syntax.RepeatableType() },
+                                         Syntax.StringType(), 
                                          1);
         }
         
@@ -181,7 +181,7 @@ public class ShellExtension extends org.nlogo.api.DefaultClassManager {
     public static class Fork extends DefaultCommand {
         
         public Syntax getSyntax () {
-            return Syntax.reporterSyntax(new int[] { Syntax.TYPE_STRING | Syntax.TYPE_REPEATABLE }, 1);
+            return Syntax.reporterSyntax(new int[] { Syntax.StringType() | Syntax.RepeatableType() }, 1);
         }
         
         public String getAgentClassString () {
