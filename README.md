@@ -17,6 +17,11 @@ The included commands are:
  * `shell:exec <command> (shell:exec <command> <param> ...)` => execute command synchronously and report a string of the results it prints to stdout
  * `shell:fork <command> (shell:fork <command> <param> ...)` => execute command asynchronously and discard the results
 
+## Downloads
+
+ * for NetLogo 5.0: https://github.com/downloads/NetLogo/Shell-Extension/shell-5.0.zip
+ * for NetLogo 4.1: https://github.com/downloads/NetLogo/Shell-Extension/shell-4.1.zip
+
 ## Using
 
 Download and unzip to the extensions folder inside your NetLogo program folder.
