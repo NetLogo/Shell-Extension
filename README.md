@@ -32,7 +32,7 @@ For more information about NetLogo extensions in general, see the NetLogo User M
 
 Use the NETLOGO environment variable to tell the Makefile which NetLogo.jar to compile against.  For example:
 
-    NETLOGO=/Applications/NetLogo\\\ 5.0 make
+    NETLOGO=/Applications/NetLogo\\\ 5.1.0 make
 
 If compilation succeeds, `shell.jar` will be created.
 
