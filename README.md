@@ -20,7 +20,7 @@ The included commands are:
 
 ## Downloads
 
- * for NetLogo 6.0: https://github.com/downloads/NetLogo/Shell-Extension/shell-6.0.zip
+ * for NetLogo 6.0: https://github.com/NetLogo/Shell-Extension/releases/download/6.0.1/shell.zip
  * for NetLogo 5.x: https://github.com/downloads/NetLogo/Shell-Extension/shell-5.0.zip
  * for NetLogo 4.1: https://github.com/downloads/NetLogo/Shell-Extension/shell-4.1.zip
 
