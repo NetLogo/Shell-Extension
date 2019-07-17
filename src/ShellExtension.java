@@ -1,7 +1,7 @@
 package org.nlogo.extensions.shell;
 
 // Originally written by Eric Russell for NetLogo versions 4.1 and 5.0, 
-// and updated to work with NetLogo 6.0 and Java 1.8 by Charles Staelin,
+// and updated to work with NetLogo 6.0 and now 6.1, and with Java 1.8 by Charles Staelin,
 // May 2017.
 
 import java.io.BufferedReader;
