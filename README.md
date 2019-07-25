@@ -20,19 +20,19 @@ The included commands are:
 
 ## Downloads
 
- * for NetLogo 6.0: https://github.com/NetLogo/Shell-Extension/releases/download/6.0.1/shell.zip
+ * for NetLogo 6.1: You can use [the extension manager](https://ccl.northwestern.edu/netlogo/docs/extension-manager.html) to install the Shell extension from within NetLogo.
  * for NetLogo 5.x: https://github.com/downloads/NetLogo/Shell-Extension/shell-5.0.zip
  * for NetLogo 4.1: https://github.com/downloads/NetLogo/Shell-Extension/shell-4.1.zip
 
 ## Using
 
-The shell extension inherits all the environment variables that were in place when NetLogo was started. That makes `shell:getenv` very useful for passing the values of ennvironment variables on to NetLogo. HOWEVER, any environment variable set by `shell:setenv` is local to the shell extension only and will disappear when the NetLogo session is ended. Similarly, the working directory for the shell extension is initially set to the directory in which the NetLogo model is located. Changing the extension's working directory with `shell:cd` changes the working directory for the extension only. **It does not change the working directory for NetLogo itself.** That is done with NetLogo's `set-current-directory` command. 
+The shell extension inherits all the environment variables that were in place when NetLogo was started. That makes `shell:getenv` very useful for passing the values of ennvironment variables on to NetLogo. HOWEVER, any environment variable set by `shell:setenv` is local to the shell extension only and will disappear when the NetLogo session is ended. Similarly, the working directory for the shell extension is initially set to the directory in which the NetLogo model is located. Changing the extension's working directory with `shell:cd` changes the working directory for the extension only. **It does not change the working directory for NetLogo itself.** That is done with NetLogo's `set-current-directory` command.
 
 `shell:setenv` and `shell:cd` thus work only within the shell extension and are in the service of `shell:exec` and `shell:fork`, which do inherit their environment and working directory from the extension's.
 
 ## Installing
 
-Download and unzip to the extensions folder, which is inside the app folder inside the NetLogo program folder. This should create a `shell` subfolder that contains the `shell.jar` file and other potentially useful files. The `shell.jar` file in this package was built under NetLogo 6.1.0 and Java 1.8.
+Check out [the extension manager](https://ccl.northwestern.edu/netlogo/docs/extension-manager.html) to install the Shell extension from within the NetLogo application.
 
 For more information about NetLogo extensions in general, see the NetLogo User Manual.
 
