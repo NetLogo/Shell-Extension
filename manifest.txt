@@ -1,4 +1,4 @@
 Manifest-Version: 1.0
 Extension-Name: shell
 Class-Manager: org.nlogo.extensions.shell.ShellExtension
-NetLogo-Extension-API-Version: 6.0
+NetLogo-Extension-API-Version: 6.1
