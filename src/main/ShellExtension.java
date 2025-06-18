@@ -1,6 +1,6 @@
 package org.nlogo.extensions.shell;
 
-// Originally written by Eric Russell for NetLogo versions 4.1 and 5.0, 
+// Originally written by Eric Russell for NetLogo versions 4.1 and 5.0,
 // and updated to work with NetLogo 6.0 and now 6.1, and with Java 1.8 by Charles Staelin,
 // May 2017.
 
@@ -32,7 +32,7 @@ public class ShellExtension extends org.nlogo.api.DefaultClassManager {
         _pb.directory(new java.io.File(context.workspace().getModelDir()));
     }
   }
-  
+
   private static String getProcessOutput(InputStream inputStream) throws IOException {
     StringBuilder sb = new StringBuilder();
     try (BufferedReader br = new BufferedReader(new InputStreamReader(inputStream))) {
@@ -67,7 +67,7 @@ public class ShellExtension extends org.nlogo.api.DefaultClassManager {
     }
 
     @Override
-    public Object report(Argument args[], Context context) 
+    public Object report(Argument args[], Context context)
             throws ExtensionException, LogoException {
       initializeProcessBuilder(context);
       File dir = _pb.directory();
@@ -78,9 +78,9 @@ public class ShellExtension extends org.nlogo.api.DefaultClassManager {
       }
     }
   }
-  
+
   public static class Reset implements Command {
-    
+
     @Override
     public Syntax getSyntax() {
       return SyntaxJ.commandSyntax(new int[]{});
@@ -113,7 +113,7 @@ public class ShellExtension extends org.nlogo.api.DefaultClassManager {
       File newDir;
       String newDirName = args[0].getString();
       if (newDirName.startsWith("/") || newDirName.matches("^[a-zA-Z]:.*")) {
-        // Parse as absolute path if it starts with a slash 
+        // Parse as absolute path if it starts with a slash
         // (Mac/Unix) or a drive letter and colon (Windows)
         newDir = new File(newDirName);
       } else {
@@ -192,7 +192,7 @@ public class ShellExtension extends org.nlogo.api.DefaultClassManager {
     }
 
     @Override
-    public Object report(Argument args[], Context context) 
+    public Object report(Argument args[], Context context)
             throws ExtensionException, LogoException {
       initializeProcessBuilder(context);
       List<String> command = new ArrayList<>(args.length);

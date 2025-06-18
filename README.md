@@ -20,7 +20,7 @@ The included commands are:
 
 ## Downloads
 
- * for NetLogo 6.1: You can use [the extension manager](https://ccl.northwestern.edu/netlogo/docs/extension-manager.html) to install the Shell extension from within NetLogo.
+ * for NetLogo 7.0, 6.1: You can use [the extension manager](https://ccl.northwestern.edu/netlogo/docs/extension-manager.html) to install the Shell extension from within NetLogo.
  * for NetLogo 5.x: https://github.com/downloads/NetLogo/Shell-Extension/shell-5.0.zip
  * for NetLogo 4.1: https://github.com/downloads/NetLogo/Shell-Extension/shell-4.1.zip
 
@@ -38,18 +38,11 @@ For more information about NetLogo extensions in general, see the NetLogo User M
 
 ## Building
 
-The Makefile included in this package can be used to create the shell.jar file from the java source file. If you are running it from the app/extensions/shell folder in the NetLogo installation, you can simply enter "make". (Depending on the system, you may need to do this as "administrator".) If you are in any other directory, you will need to first set the NETLOGO environment variable to tell the Makefile where to find the NetLogo installation.  For example:
-
-    export NETLOGO="/Applications/NetLogo 6.1.0"
-    export NETLOGO="c:/Program Files/NetLogo 6.1.0"
-
-The "" are required because the directory names contain spaces.
-
-If compilation succeeds, `shell.jar` will be created.
+Launch the project in SBT by running the `sbt` command (if you have it installed).  If you successfully run `package`, `shell.jar` is created.
 
 ## Credits
 
-The shell extension was written by Eric Russell and updated to NetLogo 6.0 and then 6.1 by Charles Staelin.
+The shell extension was written by Eric Russell and updated to NetLogo 6.0 and then 6.1 by Charles Staelin.  Since 6.1, it has been maintained by the NetLogo development team.
 
 ## Terms of Use
 
