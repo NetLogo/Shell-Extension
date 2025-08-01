@@ -12,5 +12,5 @@ scalacOptions        ++= Seq("-deprecation", "-unchecked", "-Xfatal-warnings", "
 
 netLogoExtName      := "shell"
 netLogoClassManager := "org.nlogo.extensions.shell.ShellExtension"
-netLogoVersion      := "7.0.0-beta1-c8d671e"
+netLogoVersion      := "7.0.0-beta2-de24f27"
 netLogoZipExtras   ++= Seq(baseDirectory.value / "README.md", baseDirectory.value / "example-models")
