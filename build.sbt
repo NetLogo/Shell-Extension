@@ -2,7 +2,7 @@ import org.nlogo.build.NetLogoExtension
 
 enablePlugins(NetLogoExtension)
 
-version    := "1.0.2"
+version    := "1.0.3"
 isSnapshot := true
 
 scalaVersion          := "3.7.0"
@@ -12,5 +12,5 @@ scalacOptions        ++= Seq("-deprecation", "-unchecked", "-Xfatal-warnings", "
 
 netLogoExtName      := "shell"
 netLogoClassManager := "org.nlogo.extensions.shell.ShellExtension"
-netLogoVersion      := "7.0.0-beta2-de24f27"
+netLogoVersion      := "7.0.4-bfe6fe4"
 netLogoZipExtras   ++= Seq(baseDirectory.value / "README.md", baseDirectory.value / "example-models")
